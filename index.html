@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Dynamics Events | Elegant Gatherings</title>
+    <!-- Tailwind CSS -->
+    <link href="./output.css" rel="stylesheet">
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- MAIN WRAPPER -->
+    <div class="relative">
+
+        <!-- TRANSPARENT NAVBAR -->
+        <nav class="navbar absolute top-0 left-0 w-full z-50 py-5 px-6 md:px-10 flex items-center justify-between">
+            
+            <div class="logo-wrapper">
+                <div class="logo-text">Dynamics Events</div>
+                <div class="logo-text-secondary">Premium Experiences</div>
+            </div>
+
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8 font-medium tracking-wide">
+                <a href="#" class="nav-link text-sm uppercase tracking-wider">Home</a>
+                <a href="#" class="nav-link text-sm uppercase tracking-wider">Events</a>
+                <a href="#" class="nav-link text-sm uppercase tracking-wider">Contact</a>
+            </div>
+
+            <!-- Hamburger Button (mobile only) -->
+            <button id="menuBtn" class="md:hidden flex flex-col space-y-1.5 p-2 z-50 relative" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="#" class="text-white text-2xl tracking-wide">Home</a>
+            <a href="#" class="text-white text-2xl tracking-wide">Events</a>
+            <a href="#" class="text-white text-2xl tracking-wide">Contact</a>
+        </div>
+
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="heroSection">
+            <div class="hero-bg" id="heroBg"></div>
+            <div class="hero-bg hero-bg-1"></div>
+            <div class="hero-bg hero-bg-2"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-heading">Discover Events<br>Near You</h1>
+                <div class="hero-divider"></div>
+                <p class="hero-subtitle">Curated experiences, elegant gatherings & moments that matter.</p>
+            </div>
+            <div class="scroll-indicator">
+                <svg class="w-6 h-6  mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M19 14l-7 7-7-7m14-6l-7 7-7-7"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- FEATURED EVENTS SECTION -->
+        <section class="events-section">
+            <div class="events-container">
+                
+                <div class="section-header">
+                    <div>
+                        <span class="section-badge">curated selection</span>
+                        <h2 class="section-title">Featured Events</h2>
+                    </div>
+                    <div class="search-wrapper">
+                        <input type="text" id="searchInput" placeholder="Search by event name..." class="search-input">
+                        <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Events Grid -->
+                <div id="eventsGrid" class="events-grid">
+                    <div class="loading-placeholder">Loading experiences ...</div>
+                </div>
+
+                <!-- Empty State -->
+                <div id="noEventsMsg" class="empty-state hidden">
+                    <p class="empty-text">✨ No matching events found ✨</p>
+                    <p class="empty-subtext">Try adjusting your search</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer-container">
+                <p class="footer-logo">Dynamics Events</p>
+                <p class="footer-tagline">where moments bloom</p>
+                <p class="footer-copyright">© 2025 Curated experiences. All visions reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
